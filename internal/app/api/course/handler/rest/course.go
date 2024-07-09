@@ -38,7 +38,7 @@ func (h *CourseHandler) CreateCourse(ctx *gin.Context) {
 
 	var (
 		errx error
-		code int = http.StatusOK
+		code int = http.StatusCreated
 		data interface{}
 	)
 
@@ -78,7 +78,7 @@ func (h *CourseHandler) GetCourseByClassID(ctx *gin.Context) {
 
 	var (
 		errx error
-		code int = http.StatusCreated
+		code int = http.StatusOK
 		data interface{}
 	)
 

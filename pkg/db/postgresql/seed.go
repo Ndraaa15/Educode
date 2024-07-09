@@ -1912,7 +1912,7 @@ func ClassSeed() []entity.Class {
 		ID:        1,
 		Name:      "Informatika",
 		TeacherID: id,
-		Goal:      "Mengajarkan siswa tentang informatika",
+		Goal:      "https://res.cloudinary.com/dcvnwpyd9/image/upload/v1720242761/iquest/jsal4xbga8q8cjhc74w3.pdf",
 	}}
 
 	return classes
@@ -1932,7 +1932,7 @@ func UserSeed() []entity.User {
 	}, {
 		ID:       idStudent,
 		Name:     "Student",
-		Role:     entity.RoleTeacher,
+		Role:     entity.RoleStudent,
 		Password: passStudent,
 	},
 	}

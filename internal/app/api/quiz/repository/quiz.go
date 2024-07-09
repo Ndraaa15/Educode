@@ -60,7 +60,7 @@ func (r *QuizRepositoryClient) CreateResultQuiz(ctx context.Context, result enti
 
 func (r *QuizRepositoryClient) GetQuizResultByQuizID(ctx context.Context, quizID int64) ([]entity.ResultQuiz, error) {
 	var results []entity.ResultQuiz
-	if err := r.db.WithContext(ctx).Preload("User").Where("quiz_id = ?", quizID).Find(&results).Error; err != nil {
+	if err := r.db.WithContext(ctx).Where("quiz_id = ?", quizID).Preload("User").Find(&results).Error; err != nil {
 		return []entity.ResultQuiz{}, err
 	}
 	return results, nil

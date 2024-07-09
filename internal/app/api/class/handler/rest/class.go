@@ -45,7 +45,7 @@ func (h *ClassHandler) GetClassByID(ctx *gin.Context) {
 
 	var (
 		errx error
-		code int = http.StatusCreated
+		code int = http.StatusOK
 		data interface{}
 	)
 

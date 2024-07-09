@@ -54,9 +54,9 @@ func NewBootstrap() (*Bootstrap, error) {
 		return nil, err
 	}
 
-	// if err := postgresql.Drop(db); err != nil {
-	// 	return nil, err
-	// }
+	if err := postgresql.Drop(db); err != nil {
+		return nil, err
+	}
 
 	if err := postgresql.Migrate(db); err != nil {
 		return nil, err

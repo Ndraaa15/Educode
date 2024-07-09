@@ -44,5 +44,7 @@ func ValidateJWTToken(roles ...string) gin.HandlerFunc {
 				return
 			}
 		}
+
+		ctx.AbortWithStatusJSON(http.StatusUnauthorized, gin.H{"message": "Unauthorized"})
 	}
 }

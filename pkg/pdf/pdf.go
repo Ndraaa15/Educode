@@ -32,24 +32,24 @@ func buildOrderList(m pdf.Maroto, data map[string]interface{}) {
 
 	m.SetBackgroundColor(color.NewWhite())
 
-	m.TableList(tableHeadings, data["scores"].([][]string), props.TableList{
+	m.TableList(tableHeadings, data["resultQuiz"].([][]string), props.TableList{
 		HeaderProp: props.TableListContent{
 			Color: getBlackColor(),
 			Style: consts.Bold,
 
 			Size:      9,
-			GridSizes: []uint{4, 4},
+			GridSizes: []uint{6, 6},
 		},
 		ContentProp: props.TableListContent{
-			Color:     getGrayColor(),
+			Color:     getBlackColor(),
 			Size:      8,
-			GridSizes: []uint{4, 4},
+			GridSizes: []uint{6, 6},
 		},
 		Align:              consts.Left,
 		HeaderContentSpace: 1,
 		Line:               true,
 		LineProp: props.Line{
-			Color: getGrayColor(),
+			Color: getBlackColor(),
 		},
 		VerticalContentPadding: 3,
 	})
@@ -60,13 +60,5 @@ func getBlackColor() color.Color {
 		Red:   0,
 		Green: 0,
 		Blue:  0,
-	}
-}
-
-func getGrayColor() color.Color {
-	return color.Color{
-		Red:   192,
-		Green: 192,
-		Blue:  192,
 	}
 }

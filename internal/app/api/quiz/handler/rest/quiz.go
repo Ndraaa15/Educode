@@ -9,6 +9,7 @@ import (
 	"github.com/Ndraaa15/IQuest/internal/app/api/quiz/service"
 	"github.com/Ndraaa15/IQuest/internal/pkg/dto"
 	"github.com/Ndraaa15/IQuest/internal/pkg/entity"
+	"github.com/Ndraaa15/IQuest/middleware"
 	"github.com/Ndraaa15/IQuest/pkg/logx"
 	"github.com/Ndraaa15/IQuest/pkg/utils/response"
 	"github.com/gin-gonic/gin"
@@ -27,10 +28,10 @@ func NewQuizHandler(course service.IQuizService, logx *logx.Logx) *QuizHandler {
 }
 
 func (h *QuizHandler) Start(srv *gin.RouterGroup) {
-	srv.GET("/quizzes/:class_id", h.GetQuizByClassID)
-	srv.GET("/quizzes/detail/:id", h.GetQuizByID)
-	srv.POST("/quizzes/attempt", h.AttemptQuiz)
-	srv.GET("/quizzes/result/:id", h.GetQuizResult)
+	srv.GET("/quizzes/:class_id", middleware.ValidateJWTToken("student", "teacher"), h.GetQuizByClassID)
+	srv.GET("/quizzes/detail/:id", middleware.ValidateJWTToken("student", "teacher"), h.GetQuizByID)
+	srv.POST("/quizzes/attempt", middleware.ValidateJWTToken("student"), h.AttemptQuiz)
+	srv.GET("/quizzes/result/:id", middleware.ValidateJWTToken("teacher"), h.GetQuizResult)
 }
 
 func (h *QuizHandler) GetQuizByClassID(ctx *gin.Context) {
@@ -82,7 +83,7 @@ func (h *QuizHandler) GetQuizByID(ctx *gin.Context) {
 
 	var (
 		errx error
-		code int = http.StatusCreated
+		code int = http.StatusOK
 		data interface{}
 	)
 
@@ -154,7 +155,7 @@ func (h *QuizHandler) AttemptQuiz(ctx *gin.Context) {
 }
 
 func (h *QuizHandler) GetQuizResult(ctx *gin.Context) {
-	c, cancel := context.WithTimeout(ctx, 5000*time.Millisecond)
+	c, cancel := context.WithTimeout(ctx, 7000*time.Millisecond)
 	defer cancel()
 
 	idStr := ctx.Params.ByName("id")
