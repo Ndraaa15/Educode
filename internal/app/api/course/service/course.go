@@ -3,9 +3,9 @@ package service
 import (
 	"context"
 
-	"github.com/Ndraaa15/IQuest/internal/app/api/course/repository"
-	"github.com/Ndraaa15/IQuest/internal/pkg/dto"
-	"github.com/Ndraaa15/IQuest/internal/pkg/entity"
+	"github.com/Ndraaa15/Educode/internal/app/api/course/repository"
+	"github.com/Ndraaa15/Educode/internal/pkg/dto"
+	"github.com/Ndraaa15/Educode/internal/pkg/entity"
 )
 
 type ICourseService interface {

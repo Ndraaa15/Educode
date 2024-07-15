@@ -5,10 +5,10 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/Ndraaa15/IQuest/middleware"
-	"github.com/Ndraaa15/IQuest/pkg/cloudinary"
-	"github.com/Ndraaa15/IQuest/pkg/logx"
-	"github.com/Ndraaa15/IQuest/pkg/utils/response"
+	"github.com/Ndraaa15/Educode/middleware"
+	"github.com/Ndraaa15/Educode/pkg/cloudinary"
+	"github.com/Ndraaa15/Educode/pkg/logx"
+	"github.com/Ndraaa15/Educode/pkg/utils/response"
 	"github.com/gin-gonic/gin"
 )
 

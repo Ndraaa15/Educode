@@ -7,8 +7,9 @@ import (
 )
 
 type ResultQuiz struct {
-	QuizID      int64     `json:"quizID" gorm:"type:int;not null;foreignKey:ID;references:quizzes;primaryKey"`
-	UserID      uuid.UUID `json:"userID" gorm:"type:varchar(36);not null;foreignKey:ID;references:users;primaryKey"`
+	ID          int64     `json:"id" gorm:"type:int;primaryKey;autoIncrement"`
+	QuizID      int64     `json:"quizID" gorm:"type:int;not null;foreignKey:ID;references:quizzes"`
+	UserID      uuid.UUID `json:"userID" gorm:"type:varchar(36);not null;foreignKey:ID;references:users"`
 	User        User      `json:"user,omitempty"`
 	Result      float64   `json:"result" gorm:"type:numeric;not null"`
 	RightAnswer int       `json:"rightAnswer" gorm:"type:int;not null"`

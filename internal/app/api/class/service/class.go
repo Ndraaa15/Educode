@@ -3,8 +3,8 @@ package service
 import (
 	"context"
 
-	"github.com/Ndraaa15/IQuest/internal/app/api/class/repository"
-	"github.com/Ndraaa15/IQuest/internal/pkg/entity"
+	"github.com/Ndraaa15/Educode/internal/app/api/class/repository"
+	"github.com/Ndraaa15/Educode/internal/pkg/entity"
 )
 
 type IClassService interface {

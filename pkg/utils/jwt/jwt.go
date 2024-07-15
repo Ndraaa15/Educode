@@ -6,8 +6,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/Ndraaa15/IQuest/internal/pkg/entity"
-	"github.com/Ndraaa15/IQuest/pkg/errsx"
+	"github.com/Ndraaa15/Educode/internal/pkg/entity"
+	"github.com/Ndraaa15/Educode/pkg/errsx"
 	"github.com/golang-jwt/jwt/v4"
 )
 

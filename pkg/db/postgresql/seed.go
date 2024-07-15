@@ -1,8 +1,8 @@
 package postgresql
 
 import (
-	"github.com/Ndraaa15/IQuest/internal/pkg/entity"
-	"github.com/Ndraaa15/IQuest/pkg/utils/bcrypt"
+	"github.com/Ndraaa15/Educode/internal/pkg/entity"
+	"github.com/Ndraaa15/Educode/pkg/utils/bcrypt"
 	"github.com/google/uuid"
 	"gorm.io/gorm"
 )

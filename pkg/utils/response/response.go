@@ -3,7 +3,7 @@ package response
 import (
 	"errors"
 
-	"github.com/Ndraaa15/IQuest/pkg/errsx"
+	"github.com/Ndraaa15/Educode/pkg/errsx"
 	"github.com/gin-gonic/gin"
 )
 

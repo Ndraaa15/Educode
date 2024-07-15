@@ -6,11 +6,11 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/Ndraaa15/IQuest/internal/app/api/course/service"
-	"github.com/Ndraaa15/IQuest/internal/pkg/dto"
-	"github.com/Ndraaa15/IQuest/middleware"
-	"github.com/Ndraaa15/IQuest/pkg/logx"
-	"github.com/Ndraaa15/IQuest/pkg/utils/response"
+	"github.com/Ndraaa15/Educode/internal/app/api/course/service"
+	"github.com/Ndraaa15/Educode/internal/pkg/dto"
+	"github.com/Ndraaa15/Educode/middleware"
+	"github.com/Ndraaa15/Educode/pkg/logx"
+	"github.com/Ndraaa15/Educode/pkg/utils/response"
 	"github.com/gin-gonic/gin"
 )
 

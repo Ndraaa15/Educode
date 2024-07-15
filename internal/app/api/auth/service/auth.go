@@ -5,12 +5,12 @@ import (
 	"errors"
 	"net/http"
 
-	"github.com/Ndraaa15/IQuest/internal/app/api/auth/repository"
-	"github.com/Ndraaa15/IQuest/internal/pkg/dto"
-	"github.com/Ndraaa15/IQuest/internal/pkg/entity"
-	"github.com/Ndraaa15/IQuest/pkg/errsx"
-	"github.com/Ndraaa15/IQuest/pkg/utils/bcrypt"
-	"github.com/Ndraaa15/IQuest/pkg/utils/jwt"
+	"github.com/Ndraaa15/Educode/internal/app/api/auth/repository"
+	"github.com/Ndraaa15/Educode/internal/pkg/dto"
+	"github.com/Ndraaa15/Educode/internal/pkg/entity"
+	"github.com/Ndraaa15/Educode/pkg/errsx"
+	"github.com/Ndraaa15/Educode/pkg/utils/bcrypt"
+	"github.com/Ndraaa15/Educode/pkg/utils/jwt"
 	"github.com/google/uuid"
 )
 

@@ -3,8 +3,8 @@ package main
 import (
 	"log"
 
-	"github.com/Ndraaa15/IQuest/internal/app/bootstrap"
-	"github.com/Ndraaa15/IQuest/pkg/env"
+	"github.com/Ndraaa15/Educode/internal/app/bootstrap"
+	"github.com/Ndraaa15/Educode/pkg/env"
 )
 
 func main() {

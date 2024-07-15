@@ -4,8 +4,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/Ndraaa15/IQuest/internal/pkg/entity"
-	"github.com/Ndraaa15/IQuest/pkg/utils/jwt"
+	"github.com/Ndraaa15/Educode/internal/pkg/entity"
+	"github.com/Ndraaa15/Educode/pkg/utils/jwt"
 	"github.com/gin-gonic/gin"
 )
 

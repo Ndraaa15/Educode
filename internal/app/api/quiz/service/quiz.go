@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/Ndraaa15/IQuest/internal/app/api/quiz/repository"
-	"github.com/Ndraaa15/IQuest/internal/pkg/dto"
-	"github.com/Ndraaa15/IQuest/internal/pkg/entity"
-	"github.com/Ndraaa15/IQuest/pkg/cloudinary"
-	"github.com/Ndraaa15/IQuest/pkg/pdf"
+	"github.com/Ndraaa15/Educode/internal/app/api/quiz/repository"
+	"github.com/Ndraaa15/Educode/internal/pkg/dto"
+	"github.com/Ndraaa15/Educode/internal/pkg/entity"
+	"github.com/Ndraaa15/Educode/pkg/cloudinary"
+	"github.com/Ndraaa15/Educode/pkg/pdf"
 	"github.com/google/uuid"
 )
 

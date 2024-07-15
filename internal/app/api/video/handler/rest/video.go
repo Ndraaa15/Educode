@@ -6,9 +6,9 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/Ndraaa15/IQuest/internal/app/api/video/service"
-	"github.com/Ndraaa15/IQuest/pkg/logx"
-	"github.com/Ndraaa15/IQuest/pkg/utils/response"
+	"github.com/Ndraaa15/Educode/internal/app/api/video/service"
+	"github.com/Ndraaa15/Educode/pkg/logx"
+	"github.com/Ndraaa15/Educode/pkg/utils/response"
 	"github.com/gin-gonic/gin"
 )
 

@@ -3,7 +3,7 @@ package repository
 import (
 	"context"
 
-	"github.com/Ndraaa15/IQuest/internal/pkg/entity"
+	"github.com/Ndraaa15/Educode/internal/pkg/entity"
 	"gorm.io/gorm"
 )
 

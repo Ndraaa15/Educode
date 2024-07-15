@@ -3,7 +3,7 @@ package service
 import (
 	"errors"
 
-	"github.com/Ndraaa15/IQuest/internal/pkg/entity"
+	"github.com/Ndraaa15/Educode/internal/pkg/entity"
 )
 
 func ParseRole(role string) (entity.Role, error) {

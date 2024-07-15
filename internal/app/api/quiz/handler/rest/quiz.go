@@ -6,12 +6,12 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/Ndraaa15/IQuest/internal/app/api/quiz/service"
-	"github.com/Ndraaa15/IQuest/internal/pkg/dto"
-	"github.com/Ndraaa15/IQuest/internal/pkg/entity"
-	"github.com/Ndraaa15/IQuest/middleware"
-	"github.com/Ndraaa15/IQuest/pkg/logx"
-	"github.com/Ndraaa15/IQuest/pkg/utils/response"
+	"github.com/Ndraaa15/Educode/internal/app/api/quiz/service"
+	"github.com/Ndraaa15/Educode/internal/pkg/dto"
+	"github.com/Ndraaa15/Educode/internal/pkg/entity"
+	"github.com/Ndraaa15/Educode/middleware"
+	"github.com/Ndraaa15/Educode/pkg/logx"
+	"github.com/Ndraaa15/Educode/pkg/utils/response"
 	"github.com/gin-gonic/gin"
 )
 
@@ -155,7 +155,7 @@ func (h *QuizHandler) AttemptQuiz(ctx *gin.Context) {
 }
 
 func (h *QuizHandler) GetQuizResult(ctx *gin.Context) {
-	c, cancel := context.WithTimeout(ctx, 7000*time.Millisecond)
+	c, cancel := context.WithTimeout(ctx, 10000*time.Millisecond)
 	defer cancel()
 
 	idStr := ctx.Params.ByName("id")

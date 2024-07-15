@@ -10,7 +10,7 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/Ndraaa15/IQuest/pkg/errsx"
+	"github.com/Ndraaa15/Educode/pkg/errsx"
 	"github.com/gin-gonic/gin"
 	"github.com/sirupsen/logrus"
 )
