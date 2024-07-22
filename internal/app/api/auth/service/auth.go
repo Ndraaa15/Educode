@@ -12,6 +12,7 @@ import (
 	"github.com/Ndraaa15/Educode/pkg/utils/bcrypt"
 	"github.com/Ndraaa15/Educode/pkg/utils/jwt"
 	"github.com/google/uuid"
+	"gorm.io/gorm"
 )
 
 type IAuthService interface {
@@ -110,14 +111,19 @@ func (s *AuthService) SignIn(ctx context.Context, req dto.SignInRequest) (string
 
 		class, err = db.GetClassByName(ctx, req.Class)
 		if err != nil {
+			if errors.Is(err, gorm.ErrRecordNotFound) {
+				return "", 0, errsx.NewCustomError(http.StatusNotFound, "Service.Auth.SignIn", "Class not found", errors.New("CLASS_NOT_FOUND"))
+			}
 			return "", 0, err
 		}
 	} else if user.Role == entity.RoleTeacher {
 		class, err = db.GetClassByUserID(ctx, user.ID.String())
 		if err != nil {
+			if errors.Is(err, gorm.ErrRecordNotFound) {
+				return "", 0, errsx.NewCustomError(http.StatusNotFound, "Service.Auth.SignIn", "Class not found", errors.New("CLASS_NOT_FOUND"))
+			}
 			return "", 0, err
 		}
-
 	}
 
 	token, err := jwt.EncodeToken(&user)

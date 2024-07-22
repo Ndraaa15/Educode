@@ -5,7 +5,6 @@ import (
 )
 
 type Course struct {
-	ID          int64     `gorm:"type:int;primaryKey;autoIncrement" json:"id"`
 	ClassID     int64     `gorm:"type:int;not null;foreignKey:ID;references:classes" json:"-"`
 	Course      string    `gorm:"type:text;not null" json:"course"`
 	Title       string    `gorm:"type:varchar(255);not null" json:"title"`

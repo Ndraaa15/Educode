@@ -20,7 +20,7 @@ type Logx struct {
 }
 
 func NewLogger() (*Logx, error) {
-	f, err := os.OpenFile("log/log.txt", os.O_CREATE|os.O_WRONLY, 0777)
+	f, err := os.OpenFile("log/log.txt", os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0666)
 	if err != nil {
 		return nil, err
 	}

@@ -29,7 +29,6 @@ func NewCourseHandler(course service.ICourseService, logx *logx.Logx) *CourseHan
 func (h *CourseHandler) Start(srv *gin.RouterGroup) {
 	srv.POST("/courses", middleware.ValidateJWTToken("teacher"), h.CreateCourse)
 	srv.GET("/courses/:class_id", middleware.ValidateJWTToken("student", "teacher"), h.GetCourseByClassID)
-	srv.GET("/courses/detail/:id", middleware.ValidateJWTToken("student", "teacher"), h.GetCourseByID)
 }
 
 func (h *CourseHandler) CreateCourse(ctx *gin.Context) {
@@ -92,42 +91,6 @@ func (h *CourseHandler) GetCourseByClassID(ctx *gin.Context) {
 	}()
 
 	class, err := h.course.GetCourseByClassID(c, id)
-	if err != nil {
-		errx = err
-		code = http.StatusInternalServerError
-		return
-	}
-
-	data = class
-}
-
-func (h *CourseHandler) GetCourseByID(ctx *gin.Context) {
-	c, cancel := context.WithTimeout(ctx, 5000*time.Millisecond)
-	defer cancel()
-
-	idStr := ctx.Params.ByName("id")
-	id, err := strconv.ParseInt(idStr, 10, 64)
-	if err != nil {
-		response.Error(ctx, http.StatusBadRequest, err, http.StatusText(http.StatusBadRequest), nil)
-		return
-	}
-
-	var (
-		errx error
-		code int = http.StatusCreated
-		data interface{}
-	)
-
-	defer func() {
-		if errx != nil {
-			h.logx.ErrorLogger(errx)
-			response.Error(ctx, code, errx, http.StatusText(code), nil)
-			return
-		}
-		response.Success(ctx, code, http.StatusText(http.StatusCreated), data)
-	}()
-
-	class, err := h.course.GetCourseByID(c, id)
 	if err != nil {
 		errx = err
 		code = http.StatusInternalServerError

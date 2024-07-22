@@ -28,7 +28,7 @@ func GenerateResultQuiz(data map[string]interface{}) (string, error) {
 }
 
 func buildOrderList(m pdf.Maroto, data map[string]interface{}) {
-	tableHeadings := []string{"Name", "Score"}
+	tableHeadings := []string{"Name", "Score", "Attempt At"}
 
 	m.SetBackgroundColor(color.NewWhite())
 
@@ -38,12 +38,12 @@ func buildOrderList(m pdf.Maroto, data map[string]interface{}) {
 			Style: consts.Bold,
 
 			Size:      9,
-			GridSizes: []uint{6, 6},
+			GridSizes: []uint{4, 4, 4},
 		},
 		ContentProp: props.TableListContent{
 			Color:     getBlackColor(),
 			Size:      8,
-			GridSizes: []uint{6, 6},
+			GridSizes: []uint{4, 4, 4},
 		},
 		Align:              consts.Left,
 		HeaderContentSpace: 1,

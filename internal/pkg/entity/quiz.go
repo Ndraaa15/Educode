@@ -6,6 +6,7 @@ import (
 
 type Quiz struct {
 	ID          int64          `gorm:"type:int;primaryKey;autoIncrement" json:"id"`
+	Image       string         `gorm:"type:text;not null" json:"image"`
 	Name        string         `gorm:"type:varchar(255);not null" json:"name"`
 	Description string         `gorm:"type:text;not null" json:"description"`
 	ClassID     int64          `gorm:"type:int;not null;foreignKey:ID;references:classes" json:"-"`
@@ -16,7 +17,7 @@ type Quiz struct {
 
 type QuestionQuiz struct {
 	ID       int64     `gorm:"type:int;primaryKey;autoIncrement" json:"id"`
-	QuizID   int64     `gorm:"type:int;not null;foreignKey:ID;references:quizzes;primaryKey" json:"-"`
+	QuizID   int64     `gorm:"type:int;not null;foreignKey:ID;references:quizzes" json:"-"`
 	Question string    `gorm:"type:text;not null" json:"question"`
 	OptionA  string    `gorm:"type:text;not null" json:"optionA"`
 	OptionB  string    `gorm:"type:text;not null" json:"optionB"`

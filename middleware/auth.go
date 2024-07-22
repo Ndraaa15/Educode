@@ -20,7 +20,7 @@ func ValidateJWTToken(roles ...string) gin.HandlerFunc {
 
 		tokenParts := strings.SplitN(header, " ", 2)
 		if len(tokenParts) != 2 || tokenParts[0] != "Bearer" {
-			ctx.AbortWithStatusJSON(http.StatusUnauthorized, gin.H{"message": "Unauthorized"})
+			ctx.AbortWithStatusJSON(http.StatusUnauthorized, gin.H{"message": "Invalid Token"})
 			return
 		}
 
@@ -28,7 +28,7 @@ func ValidateJWTToken(roles ...string) gin.HandlerFunc {
 
 		claims, err := jwt.DecodeToken(tokenString)
 		if err != nil {
-			ctx.AbortWithError(http.StatusUnauthorized, err)
+			ctx.AbortWithStatusJSON(http.StatusUnauthorized, gin.H{"message": "Failed Decode Token"})
 			return
 		}
 

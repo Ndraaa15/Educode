@@ -9,7 +9,7 @@ import (
 type Class struct {
 	ID        int64     `gorm:"type:int;primaryKey;autoIncrement" json:"id"`
 	Name      string    `gorm:"type:varchar(255);not null;unique" json:"name"`
-	TeacherID uuid.UUID `gorm:"not null;constraint:OnDelete:CASCADE" json:"teacherID"`
+	TeacherID uuid.UUID `gorm:"not null;constraint:OnDelete:CASCADE;foreignKey:ID;references:users" json:"teacherID"`
 	Goal      string    `gorm:"type:text;not null" json:"goal"`
 	Courses   []Course  `gorm:"foreignKey:ClassID;references:ID" json:"courses"`
 	Quizzes   []Quiz    `gorm:"foreignKey:ClassID;references:ID" json:"quizzes"`

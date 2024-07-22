@@ -107,6 +107,8 @@ func (b *Bootstrap) RegisterHandler() {
 	uploadHandler := uploadhandler.NewUploadHandler(b.cld, b.logx)
 
 	b.CheckHealth()
+	b.Docs()
+
 	b.handler = append(b.handler, authHandler, classHandler, uploadHandler, courseHandler, quizHandler, videoHandler)
 }
 
@@ -135,4 +137,8 @@ func (h *Bootstrap) CheckHealth() {
 			"message": "🚗💨Beep Beep Your Server is Healthy!",
 		})
 	})
+}
+
+func (h *Bootstrap) Docs() {
+	h.srv.StaticFileFS("/docs", "../../../docs/swagger.yaml", gin.Dir(".", false))
 }

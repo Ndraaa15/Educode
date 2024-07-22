@@ -11,11 +11,11 @@ func QuizSeed() []entity.Quiz {
 	quizzes := []entity.Quiz{{
 		ID:          1,
 		Name:        "BAB 1 Informatika dan Keterampilan Generik",
+		Image:       "https://res.cloudinary.com/dcvnwpyd9/image/upload/v1721652831/iquest/Rectangle_ddwqjn.png",
 		Description: "Mempelajari tentang informatika dan keterampilan generik yang diperlukan dalam dunia digital.",
 		ClassID:     1,
 		Questions: []entity.QuestionQuiz{
 			{
-				ID:       1,
 				QuizID:   1,
 				Question: "Apa definisi informatika?",
 				OptionA:  "Bidang ilmu yang hanya berkaitan dengan komputer.",
@@ -25,7 +25,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Studi tentang sistem komputasi dan matematika.",
 			},
 			{
-				ID:       2,
 				QuizID:   1,
 				Question: "Apa yang dimaksud dengan berpikir komputasional?",
 				OptionA:  "Berpikir dengan bantuan komputer.",
@@ -35,7 +34,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Proses berpikir yang mencakup perangkat keras dan perangkat lunak.",
 			},
 			{
-				ID:       3,
 				QuizID:   1,
 				Question: "Apa yang dimaksud dengan Industri 4.0?",
 				OptionA:  "Era di mana manusia tidak lagi bekerja.",
@@ -45,7 +43,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Era di mana teknologi komputer dan internet berperan besar dalam kehidupan manusia.",
 			},
 			{
-				ID:       4,
 				QuizID:   1,
 				Question: "Apa yang dimaksud dengan \"society 5.0\"?",
 				OptionA:  "Era di mana masyarakat tidak lagi berkomunikasi secara online.",
@@ -55,7 +52,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Era di mana masyarakat hidup di dunia maya dan nyata secara bersamaan.",
 			},
 			{
-				ID:       5,
 				QuizID:   1,
 				Question: "Mengapa banyak pekerjaan manusia digantikan oleh teknologi komputer?",
 				OptionA:  "Karena teknologi komputer tidak efisien.",
@@ -65,7 +61,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Karena teknologi komputer dapat melakukan pekerjaan rutin dengan lebih efisien.",
 			},
 			{
-				ID:       6,
 				QuizID:   1,
 				Question: "Apa yang dimaksud dengan karakteristik profil pelajar Pancasila?",
 				OptionA:  "Berpikir kritis dan kreatif.",
@@ -75,7 +70,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Berpikir kritis dan kreatif.",
 			},
 			{
-				ID:       7,
 				QuizID:   1,
 				Question: "Mengapa siswa SMA perlu membangun karakter profil pelajar Pancasila?",
 				OptionA:  "Karena mereka tidak perlu memiliki karakteristik tertentu.",
@@ -85,7 +79,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Karena karakteristik tersebut membantu mereka dalam kehidupan nyata dan digital.",
 			},
 			{
-				ID:       8,
 				QuizID:   1,
 				Question: "Apa yang dipelajari dalam mata pelajaran informatika?",
 				OptionA:  "Hanya pemrograman komputer.",
@@ -95,7 +88,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Berpikir komputasional dan aplikasi teknologi komputer dalam berbagai bidang.",
 			},
 			{
-				ID:       9,
 				QuizID:   1,
 				Question: "Apa yang dimaksud dengan \"surprise\" dalam konteks informatika?",
 				OptionA:  "Kejutan yang tidak diinginkan.",
@@ -105,7 +97,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Kejutan karena produk informatika menghasilkan sesuatu yang dapat diamati dan berfungsi dengan baik.",
 			},
 			{
-				ID:       10,
 				QuizID:   1,
 				Question: "Mengapa penting bagi siswa SMA untuk mempelajari informatika?",
 				OptionA:  "Karena mereka harus menjadi ahli komputer.",
@@ -115,7 +106,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Karena mereka perlu memahami dan mengaplikasikan teknologi komputer dalam berbagai bidang.",
 			},
 			{
-				ID:       11,
 				QuizID:   1,
 				Question: "Apa yang dimaksud dengan kolaborasi dalam konteks informatika?",
 				OptionA:  "Proses mengerjakan tugas seorang diri.",
@@ -125,7 +115,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Proses dua orang atau lebih bekerja sama untuk menyelesaikan tugas atau mencapai tujuan.",
 			},
 			{
-				ID:       12,
 				QuizID:   1,
 				Question: "Apa yang diperlukan untuk kolaborasi yang baik dalam kelompok?",
 				OptionA:  "Kepemimpinan yang dominan.",
@@ -135,7 +124,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Komunikasi yang buruk antar anggota kelompok.",
 			},
 			{
-				ID:       13,
 				QuizID:   1,
 				Question: "Mengapa kolaborasi dalam tim dianggap penting dalam informatika?",
 				OptionA:  "Karena kolaborasi hanya menghambat proses kerja.",
@@ -145,7 +133,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Karena kolaborasi mempercepat proses menyelesaikan tugas yang lebih besar.",
 			},
 			{
-				ID:       14,
 				QuizID:   1,
 				Question: "Apa yang bisa dihasilkan dari kerja kelompok dalam kolaborasi?",
 				OptionA:  "Hanya satu solusi dari satu sudut pandang.",
@@ -155,7 +142,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Alternatif solusi dari berbagai sudut pandang.",
 			},
 			{
-				ID:       15,
 				QuizID:   1,
 				Question: "Kapan kolaborasi dalam kelompok tidak selalu membuat tugas lebih cepat selesai?",
 				OptionA:  "Saat masing-masing anggota kelompok dapat mengerjakan tugas secara mandiri.",
@@ -165,7 +151,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Saat tugas yang dikerjakan oleh lebih banyak orang memerlukan koordinasi yang rumit.",
 			},
 			{
-				ID:       16,
 				QuizID:   1,
 				Question: "Berikut hal-hal yang perlu diperhatikan dalam membuat tampilan infografis, kecuali ...",
 				OptionA:  "Pemilihan kata kunci",
@@ -175,7 +160,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Tata warna dan tata letak yang tidak serasi",
 			},
 			{
-				ID:       17,
 				QuizID:   1,
 				Question: "Bagian penting yang menunjukkan alur logika dari paparan yang mengalir dengan runtut, kecuali ...",
 				OptionA:  "Ringkasan",
@@ -185,7 +169,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Isi",
 			},
 			{
-				ID:       18,
 				QuizID:   1,
 				Question: "Keterampilan yang bersifat fundamental yang terkait dengan kemampuan mengelola diri sendiri, orang lain, informasi dan tugas adalah pengertian dari ...",
 				OptionA:  "Keterampilan komputer",
@@ -195,7 +178,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Keterampilan generik",
 			},
 			{
-				ID:       19,
 				QuizID:   1,
 				Question: "Keterampilan berpikir, keterampilan pemecahan masalah, keterampilan kepemimpinan, keterampilan manajemen dan keterampilan kerja sama merupakan indikator dari keterampilan ...",
 				OptionA:  "Keterampilan komputer",
@@ -205,7 +187,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Keterampilan generik",
 			},
 			{
-				ID:       20,
 				QuizID:   1,
 				Question: "Kemampuan untuk mengaitkan pesan penting dengan pengetahuan sebelumnya, menarik kesimpulan dan memantau serta menilai kinerja pribadi disebut dengan keterampilan ...",
 				OptionA:  "Keterampilan komputer",
@@ -217,12 +198,12 @@ func QuizSeed() []entity.Quiz {
 		},
 	}, {
 		ID:          2,
-		Name:        "Bab 2 Berpikir Komputasional ",
+		Name:        "BAB 2 Berpikir Komputasional ",
+		Image:       "https://res.cloudinary.com/dcvnwpyd9/image/upload/v1721652833/iquest/Rectangle-1_yfrcj3.png",
 		Description: "Mempelajari tentang berpikir komputasional dan penerapannya dalam pemecahan masalah.",
 		ClassID:     1,
 		Questions: []entity.QuestionQuiz{
 			{
-				ID:       1,
 				QuizID:   2,
 				Question: "Berpikir komputasi memiliki empat pondasi sebagai berikut, kecuali…",
 				OptionA:  "Abstraksi",
@@ -233,7 +214,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Kritis",
 			},
 			{
-				ID:       2,
 				QuizID:   2,
 				Question: "Berpikir komputasional merupakan suatu kemampuan untuk…",
 				OptionA:  "Merancang perangkat keras komputer",
@@ -244,7 +224,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Memecahkan masalah secara logis dan efisien",
 			},
 			{
-				ID:       3,
 				QuizID:   2,
 				Question: "Seorang siswa diberikan tugas untuk memecahkan masalah menggunakan berpikir komputasional. Langkah pertama yang sebaiknya dilakukan adalah…",
 				OptionA:  "Menulis kode program menggunakan bahasa pemrograman",
@@ -255,7 +234,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Mengidentifikasi masalah yang harus dipecahkan",
 			},
 			{
-				ID:       4,
 				QuizID:   2,
 				Question: "Ada 4 fondasi dalam berpikir komputasional sebagai berikut, kecuali ....",
 				OptionA:  "Kritis",
@@ -266,7 +244,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Kritis",
 			},
 			{
-				ID:       5,
 				QuizID:   2,
 				Question: "Proses mengurutkan sebuah list dengan cara menyisipkan elemen satu per satu sesuai urutan besar kecilnya disebut .....",
 				OptionA:  "Bubble sort",
@@ -277,7 +254,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Insertion sort",
 			},
 			{
-				ID:       6,
 				QuizID:   2,
 				Question: "Perhatikan ilustrasi berikut! Dalam sebuah bus yang sesak, orang yang masuk terakhir harus keluar dulu agar seseorang dapat yang pertama datang dan terpojok di ujung akan bisa keluar. Berdasarkan berpikir komputasi, proses ini disebut .....",
 				OptionA:  "Sorting",
@@ -288,7 +264,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Stack",
 			},
 			{
-				ID:       7,
 				QuizID:   2,
 				Question: "Apa yang dimaksud dengan deduktif?",
 				OptionA:  "Pernyataan yang bernilai benar",
@@ -298,7 +273,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Pengukuran yang bertujuan untuk menarik kesimpulan",
 			},
 			{
-				ID:       8,
 				QuizID:   2,
 				Question: "Kata penghubung \"atau\" ditulis dengan ...",
 				OptionA:  "π∧",
@@ -308,7 +282,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "\"v\"",
 			},
 			{
-				ID:       9,
 				QuizID:   2,
 				Question: "Bilangan biner sering disebut juga dengan ...",
 				OptionA:  "Proposisi",
@@ -318,7 +291,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Binary digit",
 			},
 			{
-				ID:       10,
 				QuizID:   2,
 				Question: "Apa yang dimaksud dengan proposisi ...",
 				OptionA:  "Penukaran yang bertujuan untuk menarik kesimpulan",
@@ -328,7 +300,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Pernyataan dalam bentuk sebuah kalimat",
 			},
 			{
-				ID:       11,
 				QuizID:   2,
 				Question: "Yang dimaksud dengan implikasi adalah ...",
 				OptionA:  "Ismah tidak kasih uang jajan kepada adiknya",
@@ -338,7 +309,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Ismah memberikan uang jajan kepada adik-adiknya",
 			},
 			{
-				ID:       12,
 				QuizID:   2,
 				Question: "Kalimat yang berkaitan dengan operator logika adalah ...",
 				OptionA:  "Hari ini pemilu KPD daerah",
@@ -348,7 +318,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Hari ini pemilu KPI Daerah atau peserta didik dibubarkan",
 			},
 			{
-				ID:       13,
 				QuizID:   2,
 				Question: "Apa yang dimaksud dengan pemecahan masalah?",
 				OptionA:  "Hal ini karena masalah yang mereka hadapi bukanlah masalah yang dihadapi siswa sebelumnya",
@@ -358,7 +327,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Pemecahan masalah tertentu melalui proses yang direncanakan yang mungkin tidak dapat dicapai dengan segera",
 			},
 			{
-				ID:       14,
 				QuizID:   2,
 				Question: "Yang dimaksud dengan negasi adalah ...",
 				OptionA:  "Ekor monyet dihidung",
@@ -368,7 +336,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Nyamuk bisa terbang",
 			},
 			{
-				ID:       15,
 				QuizID:   2,
 				Question: "Manakah yang termasuk logika inferensi ...",
 				OptionA:  "Hujan jatuh karena adanya awan hitam yang tebal",
@@ -378,7 +345,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Rumah tua terlihat banyak daun berserakan dan di sekitar dinding terlihat banyak ditumbuhi lumut begitu juga debu tebal memenuhi kaca",
 			},
 			{
-				ID:       16,
 				QuizID:   2,
 				Question: "Yang dimaksud dengan kata negasi lingkaran adalah ...",
 				OptionA:  "Ikan bisa hidup di air",
@@ -388,7 +354,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Ikan bisa hidup di air",
 			},
 			{
-				ID:       17,
 				QuizID:   2,
 				Question: "Yang dimaksud dengan kata induktif adalah ...",
 				OptionA:  "Kesederhanaan jelas segala hal dengan bahasa ringan dan tidak bantuan dari pihak lain",
@@ -398,7 +363,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Pendiktabilitas sebisa mungkin pengjelasan yg paling banyak penghasilan predisi yg dapat di sukai atau dilayakan",
 			},
 			{
-				ID:       18,
 				QuizID:   2,
 				Question: "Contoh kalimat negasi adalah ...",
 				OptionA:  "Monyet pandai menanam pohon",
@@ -408,7 +372,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Monyet pandai panjat pohon",
 			},
 			{
-				ID:       19,
 				QuizID:   2,
 				Question: "Kata hubung konjungsi adalah ...",
 				OptionA:  "Dan",
@@ -418,7 +381,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Dan",
 			},
 			{
-				ID:       20,
 				QuizID:   2,
 				Question: "Partisipasi masyarakat dalam keluarga berencana meningkat ... mereka menyadari manfaat keluarga kecil.",
 				OptionA:  "Setelah",
@@ -430,12 +392,12 @@ func QuizSeed() []entity.Quiz {
 		},
 	}, {
 		ID:          3,
-		Name:        "Bab 3 Teknologi informasi dan komunikasi",
+		Name:        "BAB 3 Teknologi informasi dan komunikasi",
+		Image:       "https://res.cloudinary.com/dcvnwpyd9/image/upload/v1721652834/iquest/Rectangle-2_v3dbzb.png",
 		Description: "Mempelajari tentang teknologi informasi dan komunikasi yang diperlukan dalam dunia digital.",
 		ClassID:     1,
 		Questions: []entity.QuestionQuiz{
 			{
-				ID:       1,
 				QuizID:   3,
 				Question: "Contoh Input Device ...",
 				OptionA:  "Modem",
@@ -445,7 +407,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Keyboard",
 			},
 			{
-				ID:       2,
 				QuizID:   3,
 				Question: "Contoh dari output device ...",
 				OptionA:  "Speaker",
@@ -455,7 +416,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Speaker",
 			},
 			{
-				ID:       3,
 				QuizID:   3,
 				Question: "Yang termasuk kedalam peripheral device adalah ...",
 				OptionA:  "VGA",
@@ -465,7 +425,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Modem",
 			},
 			{
-				ID:       4,
 				QuizID:   3,
 				Question: "Aplikasi perkantoran yang digunakan untuk mengolah Teks adalah ...",
 				OptionA:  "Ms. Power Point",
@@ -475,7 +434,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Ms. Word",
 			},
 			{
-				ID:       5,
 				QuizID:   3,
 				Question: "Komponen UTAMA dari sebuah presentasi adalah ...",
 				OptionA:  "Presenter, Audiens, Sounds",
@@ -485,7 +443,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Presenter, Audiens, Media",
 			},
 			{
-				ID:       6,
 				QuizID:   3,
 				Question: "Untuk membuka lembar kerja baru dalam Ms. Word, dapat menggunakan shortcut?",
 				OptionA:  "Ctrl + O",
@@ -495,7 +452,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Ctrl + N",
 			},
 			{
-				ID:       7,
 				QuizID:   3,
 				Question: "Shortcut untuk menempelkan hasil dari Copy/Cut adalah ...",
 				OptionA:  "Ctrl + P",
@@ -505,7 +461,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Ctrl + V",
 			},
 			{
-				ID:       8,
 				QuizID:   3,
 				Question: "Lembar kerja dalam aplikasi pengolah angka sering disebut ...",
 				OptionA:  "Dokumen",
@@ -515,7 +470,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Spreadsheet",
 			},
 			{
-				ID:       9,
 				QuizID:   3,
 				Question: "Memory yang menyimpan data bersifat sementara disebut ...",
 				OptionA:  "RAM",
@@ -525,7 +479,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "RAM",
 			},
 			{
-				ID:       10,
 				QuizID:   3,
 				Question: "Input device yang menangkap data berupa audio adalah ...",
 				OptionA:  "Speaker",
@@ -535,7 +488,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Microphone",
 			},
 			{
-				ID:       11,
 				QuizID:   3,
 				Question: "Sistem bilangan yang mempunyai 10 digit angka adalah ...",
 				OptionA:  "Sistem bilangan desimal",
@@ -545,7 +497,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Sistem bilangan desimal",
 			},
 			{
-				ID:       12,
 				QuizID:   3,
 				Question: "Sistem bilangan yang berbasis 8 adalah ...",
 				OptionA:  "Sistem bilangan desimal",
@@ -555,7 +506,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Sistem bilangan oktal",
 			},
 			{
-				ID:       13,
 				QuizID:   3,
 				Question: "Bilangan desimal 178 bila dikonversikan ke bilangan biner adalah ...",
 				OptionA:  "10010010",
@@ -565,7 +515,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "10110010",
 			},
 			{
-				ID:       14,
 				QuizID:   3,
 				Question: "Bilangan desimal 152 bila dikonversikan ke bilangan oktal adalah ...",
 				OptionA:  "230",
@@ -575,7 +524,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "230",
 			},
 			{
-				ID:       15,
 				QuizID:   3,
 				Question: "Bilangan desimal 4821 bila dikonversikan ke bilangan heksadesimal adalah ...",
 				OptionA:  "13D6",
@@ -585,7 +533,7 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "12D5",
 			},
 			{
-				ID:       16,
+
 				QuizID:   3,
 				Question: "Bilangan biner 11100 bila dikonversikan ke bilangan desimal adalah ...",
 				OptionA:  "25",
@@ -595,7 +543,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "28",
 			},
 			{
-				ID:       17,
 				QuizID:   3,
 				Question: "Bilangan biner 101011 bila dikonversikan ke bilangan oktal adalah ...",
 				OptionA:  "50",
@@ -605,7 +552,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "50",
 			},
 			{
-				ID:       18,
 				QuizID:   3,
 				Question: "Bilangan biner 11000110 bila dikonversikan ke bilangan heksadesimal adalah ...",
 				OptionA:  "D6",
@@ -615,7 +561,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "C6",
 			},
 			{
-				ID:       19,
 				QuizID:   3,
 				Question: "Bilangan oktal 1541 bila dikonversikan ke bilangan desimal adalah ...",
 				OptionA:  "865",
@@ -625,7 +570,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "865",
 			},
 			{
-				ID:       20,
 				QuizID:   3,
 				Question: "Bilangan oktal 96 bila dikonversikan ke bilangan biner adalah ...",
 				OptionA:  "1001111",
@@ -637,12 +581,12 @@ func QuizSeed() []entity.Quiz {
 		},
 	}, {
 		ID:          4,
-		Name:        "Bab 4 Sistem Komputer",
+		Name:        "BAB 4 Sistem Komputer",
+		Image:       "https://res.cloudinary.com/dcvnwpyd9/image/upload/v1721652836/iquest/Rectangle-3_f5gf5a.png",
 		Description: "Mempelajari tentang sistem komputer, komponen-komponennya, dan cara kerjanya.",
 		ClassID:     1,
 		Questions: []entity.QuestionQuiz{
 			{
-				ID:       1,
 				QuizID:   4,
 				Question: "Komponen yang bersifat fisik, dapat dilihat dan disentuh disebut dengan ...",
 				OptionA:  "Hardware",
@@ -652,7 +596,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Hardware",
 			},
 			{
-				ID:       2,
 				QuizID:   4,
 				Question: "Perangkat keras masukan disebut juga dengan istilah ...",
 				OptionA:  "Outout Devices",
@@ -662,7 +605,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Inut Devices",
 			},
 			{
-				ID:       3,
 				QuizID:   4,
 				Question: "Alat yang digunakan untuk mengkonversi atau mengubah gambar/dokumen manual menjadi gambar/dokumen digital adalah ...",
 				OptionA:  "Printer",
@@ -672,7 +614,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Scanner",
 			},
 			{
-				ID:       4,
 				QuizID:   4,
 				Question: "Komponen dari CPU yang bertugas melakukan perhitungan aritmatika dan pembandingan adalah ...",
 				OptionA:  "Control Unit",
@@ -682,7 +623,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "ALU",
 			},
 			{
-				ID:       5,
 				QuizID:   4,
 				Question: "Bilangan biner adalah bilangan yang berbasis ...",
 				OptionA:  "Bilangan yang berbasis 2 yaitu 1 dan 2",
@@ -692,7 +632,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Bilangan yang berbasis 2 yaitu 90 dan 1",
 			},
 			{
-				ID:       6,
 				QuizID:   4,
 				Question: "Bilangan oktal adalah bilangan yang berbasis ...",
 				OptionA:  "Bilangan yang berbasis 8 yaitu 0 dan 8",
@@ -702,7 +641,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Bilangan yang berbasis 8 yaitu 0 – 7",
 			},
 			{
-				ID:       7,
 				QuizID:   4,
 				Question: "Alat yang digunakan untuk dapat mengembalikan proses encoding sehingga dapat melihat atau menerima informasi aslinya disebut ...",
 				OptionA:  "Dekoder",
@@ -712,7 +650,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Dekoder",
 			},
 			{
-				ID:       8,
 				QuizID:   4,
 				Question: "Konversi bilangan biner 1101 0100 ke heksadesimal adalah ...",
 				OptionA:  "B 3",
@@ -722,7 +659,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "D 4",
 			},
 			{
-				ID:       9,
 				QuizID:   4,
 				Question: "Konsep perencanaan dan struktur pengoperasian dasar dari suatu sistem komputer disebut ...",
 				OptionA:  "Arsitektur Komputer",
@@ -732,7 +668,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Arsitektur Komputer",
 			},
 			{
-				ID:       10,
 				QuizID:   4,
 				Question: "Bagian yang terhubung dengan komponen pelaksanaan dan inter koneksi antar komponen penyusun sistem komputer dalam melaksanakan aspek arsitekturnya disebut ...",
 				OptionA:  "Aplikasi komputer",
@@ -742,7 +677,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Organisasi Komputer",
 			},
 			{
-				ID:       11,
 				QuizID:   4,
 				Question: "Berikut ini manakah yang bukan merupakan program Microsoft Office yaitu ...",
 				OptionA:  "Microsoft Word",
@@ -752,7 +686,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "CorelDraw",
 			},
 			{
-				ID:       12,
 				QuizID:   4,
 				Question: "Untuk menggulung layar ke atas atau ke bawah digunakan ...",
 				OptionA:  "Scrollbar",
@@ -762,7 +695,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Scrollbar",
 			},
 			{
-				ID:       13,
 				QuizID:   4,
 				Question: "Syarat penulisan formula pada Microsoft Excel harus menggunakan tanda ...",
 				OptionA:  "=",
@@ -772,7 +704,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "=",
 			},
 			{
-				ID:       14,
 				QuizID:   4,
 				Question: "User nama lain dari ...",
 				OptionA:  "Penjual",
@@ -783,7 +714,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Pengguna",
 			},
 			{
-				ID:       15,
 				QuizID:   4,
 				Question: "Bahasa yang digunakan pada bahasa pemrograman tingkat rendah adalah ...",
 				OptionA:  "Mesin",
@@ -794,7 +724,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Mesin",
 			},
 			{
-				ID:       16,
 				QuizID:   4,
 				Question: "Sebuah komponen fisik pada komputer yang digunakan oleh sistem untuk menjalankan perintah yang telah diprogram disebut ...",
 				OptionA:  "VGA",
@@ -805,7 +734,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Hardware",
 			},
 			{
-				ID:       17,
 				QuizID:   4,
 				Question: "Gejala kerusakan yang biasanya terjadi pada motherboard adalah ...",
 				OptionA:  "Optical drive tidak terdeteksi oleh sistem operasi",
@@ -816,7 +744,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Setelah komputer hidup, tidak ada tampilan monitor, lampu indikator monitor berkedip, kipas PSU dan kipas prosesor berputar, tetapi tidak ada suara beep di speaker",
 			},
 			{
-				ID:       18,
 				QuizID:   4,
 				Question: "Ada berapa macam perangkat keras komputer?",
 				OptionA:  "14",
@@ -827,7 +754,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "14",
 			},
 			{
-				ID:       19,
 				QuizID:   4,
 				Question: "Membuat program-program yang diperlukan pada sistem komputerisasi yang akan dirancang merupakan tugas dari ...",
 				OptionA:  "Pengguna",
@@ -838,7 +764,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Programmer",
 			},
 			{
-				ID:       20,
 				QuizID:   4,
 				Question: "Fungsi perangkat proses adalah ...",
 				OptionA:  "Menghapus file atau data-data yang dikirimkan oleh pengguna",
@@ -851,12 +776,12 @@ func QuizSeed() []entity.Quiz {
 		},
 	}, {
 		ID:          5,
-		Name:        "Bab 5 Jaringan Komputer dan Internet",
+		Name:        "BAB 5 Jaringan Komputer dan Internet",
+		Image:       "https://res.cloudinary.com/dcvnwpyd9/image/upload/v1721652832/iquest/Rectangle-4_hcuhke.png",
 		Description: "Mempelajari tentang jaringan komputer dan internet, termasuk cara kerjanya dan jenis-jenis jaringannya.",
 		ClassID:     1,
 		Questions: []entity.QuestionQuiz{
 			{
-				ID:       1,
 				QuizID:   5,
 				Question: "Sistem yang menghubungkan dua atau lebih komputer untuk berbagi data yaitu ...",
 				OptionA:  "Jaringan komputer",
@@ -866,7 +791,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Jaringan komputer",
 			},
 			{
-				ID:       2,
 				QuizID:   5,
 				Question: "Komputer yang digunakan untuk menyimpan database dan mengelola segala aktivitas yang terjadi dalam jaringan komputer ...",
 				OptionA:  "Komputer Client",
@@ -876,7 +800,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Komputer Server",
 			},
 			{
-				ID:       3,
 				QuizID:   5,
 				Question: "Pemberi IP Address ...",
 				OptionA:  "Modem",
@@ -886,7 +809,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Router",
 			},
 			{
-				ID:       4,
 				QuizID:   5,
 				Question: "Memperkuat sinyal ...",
 				OptionA:  "Modem",
@@ -896,7 +818,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Repeater",
 			},
 			{
-				ID:       5,
 				QuizID:   5,
 				Question: "Kabel yang terbuat dari kaca ...",
 				OptionA:  "Coaxial",
@@ -906,7 +827,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Fiber Optic",
 			},
 			{
-				ID:       6,
 				QuizID:   5,
 				Question: "192.268.0.21 adalah penulisan dari ...",
 				OptionA:  "IP Address",
@@ -916,7 +836,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "IP Address",
 			},
 			{
-				ID:       7,
 				QuizID:   5,
 				Question: "HTTPS kepanjangan dari ...",
 				OptionA:  "Hypertext Transfer Protocol",
@@ -926,7 +845,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Hypertext Transfer Protocol",
 			},
 			{
-				ID:       8,
 				QuizID:   5,
 				Question: "Jaringan komputer yang mencakup wilayah yang cenderung kecil ...",
 				OptionA:  "LAN",
@@ -936,7 +854,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "PAN",
 			},
 			{
-				ID:       9,
 				QuizID:   5,
 				Question: "VPN kepanjangan dari ...",
 				OptionA:  "Virtual Protocol Network",
@@ -946,7 +863,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Virtual Private Network",
 			},
 			{
-				ID:       10,
 				QuizID:   5,
 				Question: "Jenis jaringan komputer yang menggunakan kabel sebagai media transmisi atau penghantarnya ...",
 				OptionA:  "Wire network",
@@ -956,7 +872,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Wire network",
 			},
 			{
-				ID:       11,
 				QuizID:   5,
 				Question: "Keuntungan menggunakan jaringan, kecuali ...",
 				OptionA:  "Sharing data",
@@ -966,7 +881,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Rehabilitas tinggi",
 			},
 			{
-				ID:       12,
 				QuizID:   5,
 				Question: "Kelebihan jaringan internet ...",
 				OptionA:  "Tempat berkembangnya aktivitas illegal",
@@ -976,7 +890,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Pertukaran data",
 			},
 			{
-				ID:       13,
 				QuizID:   5,
 				Question: "Jenis dari koneksi wireless pertama adalah ...",
 				OptionA:  "Wifi",
@@ -986,7 +899,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "GPRS",
 			},
 			{
-				ID:       14,
 				QuizID:   5,
 				Question: "Jaringan yang memiliki nilai kecepatan 100Mbps-1Gbps ...",
 				OptionA:  "5G",
@@ -996,7 +908,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "4G",
 			},
 			{
-				ID:       15,
 				QuizID:   5,
 				Question: "Mengotentikasi identitas situs web untuk meyakinkan pengunjung bahwa web yang diakses bukan web palsu ...",
 				OptionA:  "SSL",
@@ -1006,7 +917,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "HTTPS",
 			},
 			{
-				ID:       16,
 				QuizID:   5,
 				Question: "Sistem yang menghubungkan dua atau lebih komputer untuk berbagi data yaitu ...",
 				OptionA:  "Jaringan komputer",
@@ -1016,7 +926,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Jaringan komputer",
 			},
 			{
-				ID:       17,
 				QuizID:   5,
 				Question: "Komputer yang digunakan untuk menyimpan database dan mengelola segala aktivitas yang terjadi dalam jaringan komputer ...",
 				OptionA:  "Komputer Client",
@@ -1026,7 +935,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Komputer Server",
 			},
 			{
-				ID:       18,
 				QuizID:   5,
 				Question: "Pemberi IP Address ...",
 				OptionA:  "Modem",
@@ -1036,7 +944,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Router",
 			},
 			{
-				ID:       19,
 				QuizID:   5,
 				Question: "Memperkuat sinyal ...",
 				OptionA:  "Modem",
@@ -1046,7 +953,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Repeater",
 			},
 			{
-				ID:       20,
 				QuizID:   5,
 				Question: "Kabel yang terbuat dari kaca ...",
 				OptionA:  "Coaxial",
@@ -1058,12 +964,12 @@ func QuizSeed() []entity.Quiz {
 		},
 	}, {
 		ID:          6,
-		Name:        "Bab 6 Analisis Data",
+		Name:        "BAB 6 Analisis Data",
+		Image:       "https://res.cloudinary.com/dcvnwpyd9/image/upload/v1721652834/iquest/Rectangle-5_ktyjon.png",
 		Description: "Mempelajari tentang analisis data, teknik-teknik analisis, dan penerapannya dalam berbagai bidang.",
 		ClassID:     1,
 		Questions: []entity.QuestionQuiz{
 			{
-				ID:       1,
 				QuizID:   6,
 				Question: "Sekumpulan keterangan atau fakta mentah berupa simbol, angka, angka-angka atau citra yang didaparkan melalui proses pengamatan atau pencarian ke sumber-sumber tertentu, adalah pengertian dari ...",
 				OptionA:  "Pesan",
@@ -1073,7 +979,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Data",
 			},
 			{
-				ID:       2,
 				QuizID:   6,
 				Question: "Upaya atau cara untuk mengolah data menjadi informasi sehingga karakteristik data tersebut bisa dipahami dan bermanfaat untuk solusi permasalahan, terutama masalah yang berkaitan dengan penelitian adalah pengertian dari ...",
 				OptionA:  "Analisis Informasi",
@@ -1083,7 +988,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Analisis Data",
 			},
 			{
-				ID:       3,
 				QuizID:   6,
 				Question: "Perhatikan tahap-tahap di bawah ini!\n1. Tahap pengumpulan data\n2. Tahap pengujian\n3. Tahap tabulasi\n4. Tahap koding\n5. Tahap mendeskripsikan data\n6. Tahap pengujian hipotesis\nLangkah dan prosedur analisis data dibawah ini yang benar adalah ...",
 				OptionA:  "1,4,3,2,5,6",
@@ -1093,7 +997,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "1,4,3,2,5,6",
 			},
 			{
-				ID:       4,
 				QuizID:   6,
 				Question: "Melakukan kegiatan mencatat ataupun entri data kedalam tabel-tabel induk dalam penelitian. Tahap ini dinamakan ..",
 				OptionA:  "Tahap koding",
@@ -1103,7 +1006,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Tahap tabulasi",
 			},
 			{
-				ID:       5,
 				QuizID:   6,
 				Question: "Teknik analisis data dalam penelitian ada dua jenis yaitu ...",
 				OptionA:  "Kualitatif dan Diskriminatif",
@@ -1113,7 +1015,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Kualitatif dan Kuantitatif",
 			},
 			{
-				ID:       6,
 				QuizID:   6,
 				Question: "Analisis yang menggunakan model-model seperti model matematika misalnya fungsi multivariat model statistik, dan ekonometrik. Hasil analisis disajikan dalam bentuk angka-angka yang kemudian dijelaskan dan diinterpretasikan dalam suatu uraian. Termasuk pengertian data ...",
 				OptionA:  "Kualitatif",
@@ -1123,7 +1024,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Kuantitatif",
 			},
 			{
-				ID:       7,
 				QuizID:   6,
 				Question: "Proses secara sistematis mencari dan mengolah berbagai data yang bersumber dari wawancara, pengamatan. lapangam dam kajian dokumen (pustaka) untuk menghasilkan suatu laporan temuan penelitian. Termasuk pengertian data ...",
 				OptionA:  "Kualitatif",
@@ -1133,7 +1033,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Kualitatif",
 			},
 			{
-				ID:       8,
 				QuizID:   6,
 				Question: "Teknik analisis yang digunakan dalam menganalisis data dengan membuat gambaran data-data yang terkumpul tanpa membuat generalisasi dari hasil penelitian tersebut adalah analisis data bersifat ...",
 				OptionA:  "Deskriptif",
@@ -1143,7 +1042,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Deskriptif",
 			},
 			{
-				ID:       9,
 				QuizID:   6,
 				Question: "Beberapa yang termasuk di dalam teknik analisis data secara deskriptif misalnya menyajikan data ke dalam bentuk dibawah ini, kecuali ...",
 				OptionA:  "Tabel",
@@ -1153,7 +1051,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Flowchart",
 			},
 			{
-				ID:       10,
 				QuizID:   6,
 				Question: "Yang tidak termasuk beberapa keuntungan melakukan analisis data bagi sebuah penelitian adalah ...",
 				OptionA:  "Proses identifikasi lebih reliable",
@@ -1163,7 +1060,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Data dapat dimanipulasi untuk keuntungan materi",
 			},
 			{
-				ID:       11,
 				QuizID:   6,
 				Question: "Analisis data adalah proses yang merinci usaha formal untuk menemukan tema dan merumuskan hipotesis (ide) seperti yang disarankan oleh data dan sebagai usaha untuk memberikan bantuan pada tema dan hipotesis. Itu dikemukakan oleh ...",
 				OptionA:  "Patton (1980)",
@@ -1173,7 +1069,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Bogdan dan Taylor (1975)",
 			},
 			{
-				ID:       12,
 				QuizID:   6,
 				Question: "Merupakan proses identifikasi dan proses klasifikasi dari tiap-tiap pernyataan yang terdapat pada instrumen pengumpulan data berdasarkan variabel yang sedang diteliti. Tahapan in dinamakan ...",
 				OptionA:  "Tabulasi",
@@ -1183,7 +1078,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Koding",
 			},
 			{
-				ID:       13,
 				QuizID:   6,
 				Question: "Menyajikan dalam bentuk tabel frekuensi ataupun diagram dalam berbagai macam ukuran tendensi sentral maupun ukuran dispersi. Tahapan ini dinamakan ...",
 				OptionA:  "Tabulasi",
@@ -1193,7 +1087,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Deskripsi",
 			},
 			{
-				ID:       14,
 				QuizID:   6,
 				Question: "Tahap ini merupakan tahapan pengujian terhadap proposisi apakah ditolak atau bisa diterima dan memiliki makna atau tidak atas dasar hipotesis inilah nantinya keputusan akan dibuat. Tahapan ini dinamakan ...",
 				OptionA:  "Tabulasi",
@@ -1203,7 +1096,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Hipotesis",
 			},
 			{
-				ID:       15,
 				QuizID:   6,
 				Question: "Analisis data adalah proses mengatur data, mengorganisasikannya kedalam suatu pola, kategori dan satuan uraian dasar, dikemukakan oleh ...",
 				OptionA:  "Patton (1980)",
@@ -1213,7 +1105,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Patton (1980)",
 			},
 			{
-				ID:       16,
 				QuizID:   6,
 				Question: "Apa yang dimaksud dengan web scraping?",
 				OptionA:  "Proses mengirim email melalui web.",
@@ -1224,7 +1115,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "B. Proses mengambil data dari situs web secara otomatis.",
 			},
 			{
-				ID:       17,
 				QuizID:   6,
 				Question: "Langkah pertama dalam web scraping adalah melakukan apa?",
 				OptionA:  "Membuka Google Colaboratory.",
@@ -1235,7 +1125,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "B. Membuka catatan baru.",
 			},
 			{
-				ID:       18,
 				QuizID:   6,
 				Question: "Apa yang dimaksud dengan parsing dalam konteks web scraping?",
 				OptionA:  "Proses mengirim email ke situs web.",
@@ -1246,7 +1135,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "C. Proses mengambil kode HTML dari situs web secara utuh.",
 			},
 			{
-				ID:       19,
 				QuizID:   6,
 				Question: "Apa yang bisa diambil dari kode HTML sebuah situs web dalam web scraping?",
 				OptionA:  "Nama pengguna dan kata sandi.",
@@ -1257,7 +1145,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "C. Data posisi pekerjaan, instansi, dan gaji.",
 			},
 			{
-				ID:       20,
 				QuizID:   6,
 				Question: "Apa yang perlu dilakukan setelah mengambil kode HTML dari situs web dalam web scraping?",
 				OptionA:  "Mengubahnya menjadi teks biasa.",
@@ -1270,12 +1157,12 @@ func QuizSeed() []entity.Quiz {
 		},
 	}, {
 		ID:          7,
-		Name:        "Bab 7 Algoritma dan Pemrograman",
+		Name:        "BAB 7 Algoritma dan Pemrograman",
+		Image:       "https://res.cloudinary.com/dcvnwpyd9/image/upload/v1721652837/iquest/Rectangle-6_kzxfgb.png",
 		Description: "Mempelajari tentang algoritma dan pemrograman termasuk cara menulis kode program yang efisien.",
 		ClassID:     1,
 		Questions: []entity.QuestionQuiz{
 			{
-				ID:       1,
 				QuizID:   7,
 				Question: "Kumpulan instruksi terstruktur dan terbatas yang diimplementasikan dalam bentuk program komputer adalah ...",
 				OptionA:  "Algoritma",
@@ -1285,7 +1172,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Algoritma",
 			},
 			{
-				ID:       2,
 				QuizID:   7,
 				Question: "Kata algoritma berasal dari ilmuwan bernama ...",
 				OptionA:  "Al-Goritma",
@@ -1295,7 +1181,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Al-Khawarizmi",
 			},
 			{
-				ID:       3,
 				QuizID:   7,
 				Question: "Urutan langkah-langkah yang benar sesuai dengan logika manusia disebut ...",
 				OptionA:  "Logika",
@@ -1305,7 +1190,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Algoritma",
 			},
 			{
-				ID:       4,
 				QuizID:   7,
 				Question: "Berikut ini merupakan beberapa bahasa pemrograman, kecuali ...",
 				OptionA:  "Pascal",
@@ -1315,7 +1199,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Word",
 			},
 			{
-				ID:       5,
 				QuizID:   7,
 				Question: "Perhatikan petikan algoritma berikut : Algoritma luas segitiga\n1. Mulai\n2. Masukkan tinggi\n3. Masukkan alas\n4. ....\n5. Tampilkan luas\n6. Selesai\nLangkah ke 4 adalah ...",
 				OptionA:  "Luas = 1/2 x panjang x tinggi",
@@ -1325,7 +1208,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Luas = 1/2 x alas x tinggi",
 			},
 			{
-				ID:       6,
 				QuizID:   7,
 				Question: "Untuk memulai sebuah algoritma menggunakan simbol ...",
 				OptionA:  "Terminator",
@@ -1335,7 +1217,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Terminator",
 			},
 			{
-				ID:       7,
 				QuizID:   7,
 				Question: "Untuk mengolah rumus dalam sebuah algoritma menggunakan simbol ...",
 				OptionA:  "Terminator",
@@ -1345,7 +1226,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Persegi Panjang",
 			},
 			{
-				ID:       8,
 				QuizID:   7,
 				Question: "Simbol jajar genjang berfungsi sebagai sarana ...",
 				OptionA:  "Terminator",
@@ -1355,7 +1235,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "I/O",
 			},
 			{
-				ID:       9,
 				QuizID:   7,
 				Question: "Simbol yang digunakan untuk menunjukkan sebuah kondisi keputusan adalah simbol ...",
 				OptionA:  "Terminator",
@@ -1365,7 +1244,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Ketupat",
 			},
 			{
-				ID:       10,
 				QuizID:   7,
 				Question: "Perhatikan alur algoritma berikut ini!\nMulai → Input Alas → Input Tinggi → Luas ← (alas * tinggi) / 2 → Tampil luas → Selesai\nAlgoritma di atas adalah algoritma ..",
 				OptionA:  "Luas Segitiga",
@@ -1375,7 +1253,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Luas Segitiga",
 			},
 			{
-				ID:       11,
 				QuizID:   7,
 				Question: "Serangkaian langkah atau instruksi untuk memecahkan masalah tertentu disebut ...",
 				OptionA:  "Algoritma pemrograman",
@@ -1386,7 +1263,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Algoritma pemrograman",
 			},
 			{
-				ID:       12,
 				QuizID:   7,
 				Question: "Fungsi dari algoritma adalah ...",
 				OptionA:  "Untuk menentukan alur chart",
@@ -1397,7 +1273,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Untuk menentukan alur logika program",
 			},
 			{
-				ID:       13,
 				QuizID:   7,
 				Question: "Dibawah ini yang bukan penyajian algoritma programming, yaitu ...",
 				OptionA:  "Flowchart",
@@ -1408,7 +1283,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Definition Diagram",
 			},
 			{
-				ID:       14,
 				QuizID:   7,
 				Question: "Cara penulisan program secara informal dengan kaidah sendiri, daripada menggunakan aturan yang ditetapkan bahasa pemrograman disebut ...",
 				OptionA:  "Programming",
@@ -1419,7 +1293,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Pseudocode",
 			},
 			{
-				ID:       15,
 				QuizID:   7,
 				Question: "Diagram yang menampilkan proses dan langkah pengambilan keputusan dalam suatu program yaitu ...",
 				OptionA:  "DFD",
@@ -1430,7 +1303,7 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Flowchart",
 			},
 			{
-				ID:       16,
+
 				QuizID:   7,
 				Question: "Merupakan bentukan penulisan yang menggunakan bahasa manusia sehari-hari disebut algoritma ...",
 				OptionA:  "Flowchart",
@@ -1441,7 +1314,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Deskriptif",
 			},
 			{
-				ID:       17,
 				QuizID:   7,
 				Question: "Di dalam pemrograman, algoritma bekerja dengan mengandalkan tiga aspek utama, yakni ...",
 				OptionA:  "Proses → input → output",
@@ -1452,7 +1324,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Input → proses → output",
 			},
 			{
-				ID:       18,
 				QuizID:   7,
 				Question: "Algoritma pemrograman terdiri dari tiga macam konstruksi, yaitu ...",
 				OptionA:  "Algoritma sekuensial, algoritma percabangan, dan algoritma perulangan",
@@ -1463,7 +1334,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Algoritma sekuensial, algoritma percabangan, dan algoritma perulangan",
 			},
 			{
-				ID:       19,
 				QuizID:   7,
 				Question: "Algoritma dengan prosedur yang berjalan dari satu proses ke proses berikutnya untuk mencapai hasil akhir. Contohnya, merebus air mentah hingga air matang disebut algoritma ...",
 				OptionA:  "Algoritma Percabangan",
@@ -1474,7 +1344,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Algoritma Sekuensial",
 			},
 			{
-				ID:       20,
 				QuizID:   7,
 				Question: "Algoritma yang menjalankan keputusan berdasarkan kondisi tertentu dengan dua atau lebih percabangan. Misalnya, jika nilai ujian lebih dari 75 maka hasilnya lulus ujian, disebut algoritma ...",
 				OptionA:  "Algoritma Percabangan",
@@ -1487,12 +1356,12 @@ func QuizSeed() []entity.Quiz {
 		},
 	}, {
 		ID:          8,
-		Name:        "Bab 8 Dampak Sosial Informatika",
+		Name:        "BAB 8 Dampak Sosial Informatika",
+		Image:       "https://res.cloudinary.com/dcvnwpyd9/image/upload/v1721652836/iquest/Rectangle-7_k8frvi.png",
 		Description: "Mempelajari tentang dampak sosial informatika, baik positif maupun negatif, terhadap masyarakat.",
 		ClassID:     1,
 		Questions: []entity.QuestionQuiz{
 			{
-				ID:       1,
 				QuizID:   8,
 				Question: "Seorang system analyst mempunyai tugas utama ...",
 				OptionA:  "merubah sistem",
@@ -1503,7 +1372,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "merancang sistem",
 			},
 			{
-				ID:       2,
 				QuizID:   8,
 				Question: "Berikut yang bukan merupakan dampak positif media sosial adalah ...",
 				OptionA:  "Dapat bertemu dengan teman lama",
@@ -1513,7 +1381,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Dapat digunakan untuk mengumpulkan data pribadi pengguna lain",
 			},
 			{
-				ID:       3,
 				QuizID:   8,
 				Question: "Perangkat lunak yang dilepas total oleh pembuatnya disebut ...",
 				OptionA:  "Trial program",
@@ -1523,17 +1390,15 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Public domain",
 			},
 			{
-				ID:       4,
 				QuizID:   8,
 				Question: "Bagi seseorang yang ingin mengembangkan karirnya di dalam pengembangan komputasi awan, berikut adalah pilihan sertifikasi yang mesti ditempuh, kecuali....",
-				OptionA:  "Microsoft – Certified Systems Engineer: Private Cloud (MCSE).",
-				OptionB:  "Vmware – Certified Professional 6 – Data Center Virtualization.",
-				OptionC:  "Google – Cloud Certifications.",
-				OptionD:  "Amazon – Web Services Certified Solutions Architect (AWS-CSA).",
-				Answer:   "Microsoft – SQL Server Certifications.",
+				OptionA:  "Microsoft - Certified Systems Engineer: Private Cloud (MCSE).",
+				OptionB:  "Vmware - Certified Professional 6 - Data Center Virtualization.",
+				OptionC:  "Google - Cloud Certifications.",
+				OptionD:  "Amazon - Web Services Certified Solutions Architect (AWS-CSA).",
+				Answer:   "Microsoft - SQL Server Certifications.",
 			},
 			{
-				ID:       5,
 				QuizID:   8,
 				Question: "Anda adalah seorang pegawai pada sebuah perusahaan ternama. Anda sangat semangat dalam bekerja dan terkenal memiliki dedikasi tinggi dalam bekerja. Suatu hari, Anda tidak sengaja melakukan kesalahan fatal, sehingga merusak sistem dan database perusahaan. Bagaimana tindakan Anda?",
 				OptionA:  "Berusaha memperbaikinya sendiri sebagai bentuk tanggung jawab kepada perusahaan.",
@@ -1543,7 +1408,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Memanggil ahli IT untuk memperbaiki kerusakan sistem dan database perusahaan tersebut.",
 			},
 			{
-				ID:       6,
 				QuizID:   8,
 				Question: "Beberapa program komputer dudustribusikan dan memberikan lisensi untuk bebas mereproduksi program komputer menurut kondisi ...",
 				OptionA:  "GPL",
@@ -1553,7 +1417,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "GPL",
 			},
 			{
-				ID:       7,
 				QuizID:   8,
 				Question: "Perhatikan beberapa kemudahan terkait teknologi informasi berikut.\n1) Produk lebih mudah dipasarkan melalui internet\n2) Usaha dapat dilakukan dengan modal yang lebih kecil\n3) Produk lebih muda diproduksi\n4) Ongkos produksi sebuah produk lebih murah\nTeknologi informasi memberikan kemudahan dalam membuka usaha. Penyebab yang benar ditunjukkan oleh nomor ...",
 				OptionA:  "1) dan 2)",
@@ -1563,7 +1426,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "1) dan 2)",
 			},
 			{
-				ID:       8,
 				QuizID:   8,
 				Question: "Tanggung jawab dari keseluruhan perencanaan dan pelaksanaan sebuah proyek ada di pundak seorang...",
 				OptionA:  "System analyst",
@@ -1574,7 +1436,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Project Manager",
 			},
 			{
-				ID:       9,
 				QuizID:   8,
 				Question: "Berikut adalah Bidang pekerjaan dengan spesialisasi dalam hal web developer, kecuali....",
 				OptionA:  "Webmaster dan senior web developer",
@@ -1585,9 +1446,8 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "front end developer dan technical engineering",
 			},
 			{
-				ID:       10,
 				QuizID:   8,
-				Question: "Google – IT Support adalah salah satu sertifikasi IT bagi seseorang yang ingin mengembangkan dirinya dengan profesi sebagai....",
+				Question: "Google  IT Support adalah salah satu sertifikasi IT bagi seseorang yang ingin mengembangkan dirinya dengan profesi sebagai....",
 				OptionA:  "Developer",
 				OptionB:  "Programmer",
 				OptionC:  "HelpDesk",
@@ -1595,7 +1455,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "HelpDesk",
 			},
 			{
-				ID:       11,
 				QuizID:   8,
 				Question: "Pemegang hak atas program komputer menggunakan lisensi berjenis ...",
 				OptionA:  "Product wrap",
@@ -1605,7 +1464,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Shink wrap",
 			},
 			{
-				ID:       12,
 				QuizID:   8,
 				Question: "Teknologi berikut yang tidak memberikan peranan dalam meningkatkan interaksi sosial antara penggunanya adalah ...",
 				OptionA:  "Line",
@@ -1615,7 +1473,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Microsoft Word",
 			},
 			{
-				ID:       13,
 				QuizID:   8,
 				Question: "Perhatikan data berikut!\n1) Mendorong pengembangan program komputer secara bersama-sama\n2) Membuang program yang salah (bug)\n3) Mengenalkan karya turunan\n4) Mendistribusikian lisensi terbatas komersial\nBerdasarkan pernyataan di atas, gerakan open source disusun dengan tujuan ditunjukkan pada nomor ...",
 				OptionA:  "1) dan 3)",
@@ -1625,7 +1482,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "1), 2) dan 3)",
 			},
 			{
-				ID:       14,
 				QuizID:   8,
 				Question: "Profesi berikut yang bukan termasuk profesi baru dengan memanfaatkan media sosial adalah ...",
 				OptionA:  "Food blogger",
@@ -1635,13 +1491,16 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Gamer",
 			},
 			{
-				ID:       15,
 				QuizID:   8,
-				Question: "Programmer dan Developer adalah dua jenis pekerjaan dalam bidang informatika yang berbeda. Pernyataan yang kurang tepat tentang keduanya di bawah ini adalah....\nA. Setiap programmer yang hebat sudah dipastikan bisa menjadi seorang developer\nB. Baik programmer maupun developer memiliki tugas yang berhubungan dengan coding\nC. Seorang developer adalah seorang programmer\nD. Developer memiliki salah satu tugasnya adalah Mendesain perangkat lunak\nE. Developer memiliki salah satu tugasnya adalah melakukan pengembangan sistem",
+				Question: "Programmer dan Developer adalah dua jenis pekerjaan dalam bidang informatika yang berbeda. Pernyataan yang kurang tepat tentang keduanya di bawah ini adalah....",
+				OptionA:  "Setiap programmer yang hebat sudah dipastikan bisa menjadi seorang developer",
+				OptionB:  "Baik programmer maupun developer memiliki tugas yang berhubungan dengan coding",
+				OptionC:  "Seorang developer adalah seorang programmer",
+				OptionD:  "Developer memiliki salah satu tugasnya adalah Mendesain perangkat lunak",
+				OptionE:  "Developer memiliki salah satu tugasnya adalah melakukan pengembangan sistem",
 				Answer:   "Setiap programmer yang hebat sudah dipastikan bisa menjadi seorang developer",
 			},
 			{
-				ID:       16,
 				QuizID:   8,
 				Question: "Apa yang dimaksud dengan abacus dalam sejarah perkembangan komputer?",
 				OptionA:  "Sebuah komputer pertama",
@@ -1651,7 +1510,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Sebuah mesin hitung manual kuno",
 			},
 			{
-				ID:       17,
 				QuizID:   8,
 				Question: "Siapa yang merupakan pemrogram pertama dalam sejarah komputer?",
 				OptionA:  "Charles Babbage",
@@ -1662,7 +1520,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Ada Lovelace",
 			},
 			{
-				ID:       18,
 				QuizID:   8,
 				Question: "Apa yang menjadi dasar pengembangan bahasa-bahasa pemrograman dan teori otomata?",
 				OptionA:  "Mesin Turing",
@@ -1672,7 +1529,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Mesin Turing",
 			},
 			{
-				ID:       19,
 				QuizID:   8,
 				Question: "Bagaimana komputer berevolusi seiring waktu?",
 				OptionA:  "Dengan tetap menggunakan model abstrak",
@@ -1682,7 +1538,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Dengan tetap menggunakan model abstrak",
 			},
 			{
-				ID:       20,
 				QuizID:   8,
 				Question: "Apa manfaat mempelajari sejarah perkembangan komputer?",
 				OptionA:  "Untuk mengurangi perkembangan teknologi",
@@ -1695,11 +1550,11 @@ func QuizSeed() []entity.Quiz {
 	}, {
 		ID:          9,
 		Name:        "BAB 9 Praktik Lintas Bidang Informatika",
+		Image:       "https://res.cloudinary.com/dcvnwpyd9/image/upload/v1721654644/iquest/Rectangle-9_ytvkks.png",
 		Description: "Mempelajari tentang praktik lintas bidang informatika yang melibatkan berbagai aspek informatika dalam kehidupan sehari-hari.",
 		ClassID:     1,
 		Questions: []entity.QuestionQuiz{
 			{
-				ID:       1,
 				QuizID:   9,
 				Question: "Apa contoh dampak sosial dari informatika?",
 				OptionA:  "Peningkatan polusi",
@@ -1709,7 +1564,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Memfasilitasi jaringan social",
 			},
 			{
-				ID:       2,
 				QuizID:   9,
 				Question: "Teknologi informasi dapat memperpanjang durasi waktu seseorang mengerjakan tugasnya. Apa nama fenomena ini?",
 				OptionA:  "Pasar pasang",
@@ -1719,7 +1573,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Disutansi",
 			},
 			{
-				ID:       3,
 				QuizID:   9,
 				Question: "Bagaimana dampak sosial informatika terhadap ekonomi dunia?",
 				OptionA:  "Mengakibatkan inflasinya",
@@ -1729,7 +1582,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Meningkatkan kualitas hidup",
 			},
 			{
-				ID:       4,
 				QuizID:   9,
 				Question: "Teknologi informasi memiliki dampak sosial khusus terhadap dunia perdagangan. Apakah nama fenomena ini?",
 				OptionA:  "Pasar pasang",
@@ -1739,7 +1591,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Ekonomi informasi",
 			},
 			{
-				ID:       5,
 				QuizID:   9,
 				Question: "Bernapas udara bersih adalah salah satu hasil dari teknologi informasi. Bagaimana dampak sosial informatika ini?",
 				OptionA:  "Meningkatkan polusi",
@@ -1749,7 +1600,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Meningkatkan kualitas udara",
 			},
 			{
-				ID:       6,
 				QuizID:   9,
 				Question: "Manfaat teknologi informasi bagi anak-anak adalah membantu…",
 				OptionA:  "Mengajar mereka tentang teknologi",
@@ -1759,7 +1609,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Memudahkan pembelajaran melalui internet",
 			},
 			{
-				ID:       7,
 				QuizID:   9,
 				Question: "Di bawah ini adalah dampak sosial yang terkait dengan informatika selain meningkatkan konsep produktivitas, autonomi, dan jaringan. Apa nama fenomena ini?",
 				OptionA:  "Automasi",
@@ -1769,7 +1618,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Automasi",
 			},
 			{
-				ID:       8,
 				QuizID:   9,
 				Question: "Di bawah ini adalah dampak sosial teknologi informasi untuk pengolahan data. Apa nama fenomena ini?",
 				OptionA:  "Otomatisasi",
@@ -1779,7 +1627,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Pemanfaatan data",
 			},
 			{
-				ID:       9,
 				QuizID:   9,
 				Question: "Teknologi informasi telah membantu mengurangi biaya produksi di seluruh dunia. Bagaimana cara teknologi informasi membantu ini?",
 				OptionA:  "Dengan mengurangi manusia kerja",
@@ -1789,7 +1636,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Dengan meningkatkan efisiensi bisnis",
 			},
 			{
-				ID:       10,
 				QuizID:   9,
 				Question: "Apa dampak sosial teknologi informasi untuk bisnis?",
 				OptionA:  "Memungkinkan otomasi",
@@ -1799,7 +1645,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Memungkinkan otomasi",
 			},
 			{
-				ID:       11,
 				QuizID:   9,
 				Question: "Apa yang dimaksud dengan lintas bidang informatika ?",
 				OptionA:  "Kelompok studi yang melibatkan aspek teknikal dan ilmu pengetahuan komputer.",
@@ -1809,7 +1654,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Pendekatan interdisipliner dari bidang-bidang terkait.",
 			},
 			{
-				ID:       12,
 				QuizID:   9,
 				Question: "Apakah tugas utama dari lintas bidang informatika ?",
 				OptionA:  "Solusi teknis untuk berbagai jenis masalah.",
@@ -1819,7 +1663,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Merumuskan teknologi yang bermanfaat dengan cara interdisiplin.",
 			},
 			{
-				ID:       13,
 				QuizID:   9,
 				Question: "Di antara berbagai disiplin informatika, aplikasi grafika termasuk",
 				OptionA:  "Sistem jaringan",
@@ -1829,7 +1672,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Animasi 3D",
 			},
 			{
-				ID:       14,
 				QuizID:   9,
 				Question: "Apa yang dimaksud dengan teknologi lintas bidang ?",
 				OptionA:  "Teknologi untuk menerapkan dampak dari riset sains secara interdisiplin.",
@@ -1839,7 +1681,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Teknologi untuk menerapkan dampak dari riset sains secara interdisiplin.",
 			},
 			{
-				ID:       15,
 				QuizID:   9,
 				Question: "Bidang ilmu apa yang dapat mengambil manfaat dari lintas bidang informatika ?",
 				OptionA:  "Fisika",
@@ -1849,7 +1690,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Fisika, Matematika, Kimia, Biologi",
 			},
 			{
-				ID:       16,
 				QuizID:   9,
 				Question: "Apakah yang dimaksud dengan manajemen lintas bidang informatika ?",
 				OptionA:  "Penggunaan berbagai teknik untuk memecahkan masalah kompleks.",
@@ -1859,7 +1699,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Menghubungkan kemampuan bersama dari berbagai disiplin ilmu informatika.",
 			},
 			{
-				ID:       17,
 				QuizID:   9,
 				Question: "Tata cara manajemen lintas bidang informatika termasuk",
 				OptionA:  "Memahami aspek teknis dan non-teknis dari proyek.",
@@ -1869,7 +1708,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Memahami aspek teknis dan non-teknis dari proyek, Memanfaatkan kemampuan teknis para ahli dari berbagai bidang, Penggunaan berbagai teknologi untuk menyelesaikan permasalahan.",
 			},
 			{
-				ID:       18,
 				QuizID:   9,
 				Question: "Apa yang dimaksud dengan lingkungan lintas bidang informatika ?",
 				OptionA:  "Pendekatan secara sistematis untuk memecahkan masalah komputasi.",
@@ -1879,7 +1717,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Suatu komunitas yang menggabungkan berbagai ilmu dan teknologi.",
 			},
 			{
-				ID:       19,
 				QuizID:   9,
 				Question: "Manfaat utama dari lintas bidang informatika adalah",
 				OptionA:  "Raihan hasil yang lebih efisien dan lebih cepat.",
@@ -1889,7 +1726,6 @@ func QuizSeed() []entity.Quiz {
 				Answer:   "Kombinasi kemampuan dari berbagai disiplin ilmu untuk menganalisis masalah.",
 			},
 			{
-				ID:       20,
 				QuizID:   9,
 				Question: "Berikut ini merupakan bab kerja yang harus diikuti dalam lintas bidang informatika, kecuali",
 				OptionA:  "Analisis masalah",
@@ -1909,7 +1745,6 @@ func ClassSeed() []entity.Class {
 	id, _ := uuid.Parse("b3f1f4c6-0b5d-4b0d-8e2e-6e0c1d4c5d9d")
 
 	classes := []entity.Class{{
-		ID:        1,
 		Name:      "Informatika",
 		TeacherID: id,
 		Goal:      "https://res.cloudinary.com/dcvnwpyd9/image/upload/v1720242761/iquest/jsal4xbga8q8cjhc74w3.pdf",
@@ -1945,6 +1780,7 @@ func VideoSeed() []entity.Video {
 		{
 			ID:          1,
 			ClassID:     1,
+			Image:       "https://res.cloudinary.com/dcvnwpyd9/image/upload/v1721652831/iquest/Rectangle_ddwqjn.png",
 			Video:       "https://youtu.be/IB5Y9FJnVXQ?si=-CY30r7SWJFcr54F",
 			Title:       "BAB 1 Informatika dan Keterampilan Generik",
 			Description: "Video pembelajaran mengenai dasar-dasar informatika dan keterampilan generik yang diperlukan untuk memahami materi informatika.",
@@ -1952,6 +1788,7 @@ func VideoSeed() []entity.Video {
 		{
 			ID:          2,
 			ClassID:     1,
+			Image:       "https://res.cloudinary.com/dcvnwpyd9/image/upload/v1721652833/iquest/Rectangle-1_yfrcj3.png",
 			Video:       "https://youtu.be/ol0G_lrgNBI?si=9RhvI7I6r9LLw8NM",
 			Title:       "BAB 2 Berpikir Komputasional",
 			Description: "Video pembelajaran tentang berpikir komputasional dan cara memecahkan masalah secara logis dan efisien.",
@@ -1959,6 +1796,7 @@ func VideoSeed() []entity.Video {
 		{
 			ID:          3,
 			ClassID:     1,
+			Image:       "https://res.cloudinary.com/dcvnwpyd9/image/upload/v1721652834/iquest/Rectangle-2_v3dbzb.png",
 			Video:       "https://youtu.be/FIGAQSXZS9o?si=iWajTTajdHYt4rBP",
 			Title:       "BAB 3 Teknologi Informasi dan Komunikasi",
 			Description: "Video pembelajaran mengenai teknologi informasi dan komunikasi, serta peranannya dalam kehidupan sehari-hari.",
@@ -1966,6 +1804,7 @@ func VideoSeed() []entity.Video {
 		{
 			ID:          4,
 			ClassID:     1,
+			Image:       "https://res.cloudinary.com/dcvnwpyd9/image/upload/v1721652836/iquest/Rectangle-3_f5gf5a.png",
 			Video:       "https://youtu.be/M_qL2Rfd_yw?si=h1AO9shiO5aWSu_l",
 			Title:       "BAB 4 Sistem Komputer",
 			Description: "Video pembelajaran tentang sistem komputer, komponen-komponennya, dan cara kerjanya.",
@@ -1973,6 +1812,7 @@ func VideoSeed() []entity.Video {
 		{
 			ID:          5,
 			ClassID:     1,
+			Image:       "https://res.cloudinary.com/dcvnwpyd9/image/upload/v1721652832/iquest/Rectangle-4_hcuhke.png",
 			Video:       "https://youtu.be/c6RG-l75_Qo?si=wlbi74ZCvNyIjNqa",
 			Title:       "BAB 5 Jaringan Komputer dan Internet",
 			Description: "Video pembelajaran mengenai jaringan komputer dan internet, termasuk cara kerjanya dan jenis-jenis jaringannya.",
@@ -1980,6 +1820,7 @@ func VideoSeed() []entity.Video {
 		{
 			ID:          6,
 			ClassID:     1,
+			Image:       "https://res.cloudinary.com/dcvnwpyd9/image/upload/v1721652834/iquest/Rectangle-5_ktyjon.png",
 			Video:       "https://youtu.be/L9wlcDVrO8E?si=uLnKNCO5053aV98X",
 			Title:       "BAB 6 Analisis Data",
 			Description: "Video pembelajaran tentang analisis data, teknik-teknik analisis, dan penerapannya dalam berbagai bidang.",
@@ -1987,6 +1828,7 @@ func VideoSeed() []entity.Video {
 		{
 			ID:          7,
 			ClassID:     1,
+			Image:       "https://res.cloudinary.com/dcvnwpyd9/image/upload/v1721652837/iquest/Rectangle-6_kzxfgb.png",
 			Video:       "https://youtu.be/-iGMZEsSEG8?si=0t2fsGBw_CmnoiB6",
 			Title:       "BAB 7 Algoritma dan Pemrograman",
 			Description: "Video pembelajaran mengenai algoritma dan pemrograman, termasuk cara menulis kode program yang efisien.",
@@ -1994,6 +1836,7 @@ func VideoSeed() []entity.Video {
 		{
 			ID:          8,
 			ClassID:     1,
+			Image:       "https://res.cloudinary.com/dcvnwpyd9/image/upload/v1721652836/iquest/Rectangle-7_k8frvi.png",
 			Video:       "https://youtu.be/wawDQTJCsBg?si=-f6v-n_3bz96rVYy",
 			Title:       "BAB 8 Dampak Sosial Informatika",
 			Description: "Video pembelajaran tentang dampak sosial informatika, baik positif maupun negatif, terhadap masyarakat.",
@@ -2001,6 +1844,7 @@ func VideoSeed() []entity.Video {
 		{
 			ID:          9,
 			ClassID:     1,
+			Image:       "https://res.cloudinary.com/dcvnwpyd9/image/upload/v1721654644/iquest/Rectangle-9_ytvkks.png",
 			Video:       "https://youtu.be/bXyRcqHnZeA?si=Ex-dRPjQWauOMtmc",
 			Title:       "BAB 9 Praktika Lintas Bidang Informatika",
 			Description: "Video pembelajaran mengenai praktika lintas bidang informatika dan aplikasi praktis dalam kehidupan sehari-hari.",
@@ -2013,7 +1857,6 @@ func VideoSeed() []entity.Video {
 func CourseSeed() []entity.Course {
 	courses := []entity.Course{
 		{
-			ID:          1,
 			Title:       "Informatika",
 			Description: "Materi Infomatika",
 			ClassID:     1,

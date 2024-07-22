@@ -157,6 +157,7 @@ func PopulatePDFData(results []entity.ResultQuiz) map[string]interface{} {
 		resultQuiz = append(resultQuiz, []string{
 			result.User.Name,
 			fmt.Sprintf("%.2f", result.Result),
+			result.CreateAt.Format("2006-01-02 15:04:05"),
 		})
 	}
 

@@ -155,7 +155,7 @@ func (h *QuizHandler) AttemptQuiz(ctx *gin.Context) {
 }
 
 func (h *QuizHandler) GetQuizResult(ctx *gin.Context) {
-	c, cancel := context.WithTimeout(ctx, 10000*time.Millisecond)
+	c, cancel := context.WithTimeout(ctx, 15000*time.Millisecond)
 	defer cancel()
 
 	idStr := ctx.Params.ByName("id")
